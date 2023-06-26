@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "working-with-databases"
+version = "0.1.0"
+description = ""
+authors = ["remmover <77463027+remmover@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "working_with_databases"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg2 = "^2.9.6"
+faker = "^18.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
