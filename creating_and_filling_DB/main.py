@@ -1,4 +1,4 @@
-import functools
+from functools import wraps
 import logging
 from datetime import datetime, date, timedelta
 from random import randint
@@ -26,7 +26,7 @@ NUMBERS_STUDENTS = 31
 
 
 def create_table_decorator(func):
-    @functools.wraps(func)
+    @wraps(func)
     def wrapper(conn):
         c = conn.cursor()
         try:

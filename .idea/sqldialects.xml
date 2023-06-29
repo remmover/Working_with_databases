@@ -3,5 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/creating_and_filling_DB/create.py" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/creating_and_filling_DB/main.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/selections_from_DB/query_1.sql" dialect="GenericSQL" />
+    <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>

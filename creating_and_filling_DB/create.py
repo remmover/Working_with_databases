@@ -1,5 +1,5 @@
 import logging
-import functools
+from functools import wraps
 
 from psycopg2 import DatabaseError
 
@@ -7,7 +7,7 @@ from connection import create_connection
 
 
 def create_table_decorator(func):
-    @functools.wraps(func)
+    @wraps(func)
     def wrapper(conn, sql_expression):
         c = conn.cursor()
         try:
